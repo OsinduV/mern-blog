@@ -1,4 +1,4 @@
-Install React.js and Tailwind CSS and Create the first template
+-------------- Install React.js and Tailwind CSS and Create the first template -------------- 
 
 *	Commands:
 	npm create vite@latest    framework >> React;  varient >> javaScript + SWC
@@ -15,3 +15,21 @@ Install React.js and Tailwind CSS and Create the first template
 *remove app.css because we use tailwind css
 delete unnessasary files --> src/App.css , public/vite.svg, asset/react.svg
 	
+	
+-------------- CREATE PAGES AND ROUTES -------------- 
+	commands :
+	npm i react-router-dom
+	
+-------------- CREATE HEADER COMPONENTS -------------- 
+header - flowbite (created based on tailwind css, like boostrap, completely customizable)
+	commands: FlowBite -> Docs -> QickStart
+	npm i flowbite-react 
+	....
+	
+	npm i react-icons
+	
+	<Navbar.Link> creates an <a> tag also <Link> creates an <a> too
+	2 <a> tags not allowed inside each others
+	
+-------------- Create and run the server -------------- 
+when we deploy the application the server going to read file inside the root directory and understand our code so we need to put the package.json inside the root directory
