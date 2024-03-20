@@ -1,0 +1,17 @@
+Install React.js and Tailwind CSS and Create the first template
+
+*	Commands:
+	npm create vite@latest    framework >> React;  varient >> javaScript + SWC
+	cd folderName --> npm i
+	
+* 	Extentions:
+	ES7, 
+	Auto Rename Tag, 
+	Multiple cursor case preserve --(cardinal90)
+	Prettier - code formatter
+	tailwind CSS IntelliSense
+
+*Install Tailwind CSS with Vite 
+*remove app.css because we use tailwind css
+delete unnessasary files --> src/App.css , public/vite.svg, asset/react.svg
+	
