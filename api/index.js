@@ -25,3 +25,15 @@ app.listen(3000, () => {
 
 app.use('/api/user', userRoutes);
 app.use('/api/auth', authRoutes);
+
+app.use((err, req, res, next) => {
+
+  const statusCode = err.ststusCode || 500; //why?500 : send an error without status code we're going to get an error
+  const message = err.message || "Internal server error";
+  res.status(statusCode).json({
+    success: false,
+    statusCode,
+    message,
+  });
+
+});
