@@ -20,6 +20,7 @@ delete unnessasary files --> src/App.css , public/vite.svg, asset/react.svg
 	commands :
 	npm i react-router-dom
 	
+
 -------------- CREATE HEADER COMPONENTS -------------- 
 header - flowbite (created based on tailwind css, like boostrap, completely customizable)
 	commands: FlowBite -> Docs -> QickStart
@@ -30,6 +31,49 @@ header - flowbite (created based on tailwind css, like boostrap, completely cust
 	
 	<Navbar.Link> creates an <a> tag also <Link> creates an <a> too
 	2 <a> tags not allowed inside each others
+
 	
 -------------- Create and run the server -------------- 
-when we deploy the application the server going to read file inside the root directory and understand our code so we need to put the package.json inside the root directory
+when we deploy the application the server going to read file inside the root directory and understand our code so we need to put the package.json inside the root directory.
+	command: 
+	npm init -y : this is going to create a package json file for us
+
+	npm i express
+default module type is common js. we need to change the type to module.
+because we are using import keyword to import
+in commonjs using require keyword
+
+	npm i nodemon : detect changes and restart the server
+when we deploy our application we need to run it using node, NOT nodemon
+
+
+-------------- Connect to the database -------------- 
+	command: 
+	npi i mongoose
+	npm i dotenv : to use environment variables
+
+
+-------------- Create user model -------------- 
+model : is kind of rules we're going to set that let us to create this rules & in this case users cannot have access to some parts of the database
+
+
+
+-------------- Create a test API route -------------- 
+
+
+
+-------------- Create signup API route -------------- 
+	commands:
+	npm i bcryptjs
+
+
+-------------- Add a middleware and a function to handle errors -------------- 
+
+middleware to handle errors : each time we have to create different messages and status for our errors, which is a little bit time consuming. we are going to create a middleware to handle these errors .
+
+-------------- Create signup page UI -------------- 
+
+
+
+-------------- Add functionality to the sign up page -------------- 
+we want add a unchange event listener to each input .
