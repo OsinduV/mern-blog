@@ -30,7 +30,7 @@ export default function SignUp() {
       });
       const data = await res.json();
       if (data.success === false) {
-        return setErrorMessage(data.message);
+        setErrorMessage(data.message);
       }
       setLoading(false);
       if (res.ok) {
