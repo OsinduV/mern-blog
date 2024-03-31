@@ -77,3 +77,49 @@ middleware to handle errors : each time we have to create different messages and
 
 -------------- Add functionality to the sign up page -------------- 
 we want add a unchange event listener to each input .
+
+-------------- Create and add the footer component -------------- 
+
+-------------- Create signin API route -------------- 
+we need to authenticate users
+	command :
+	npm i jsonwebtoken
+
+jwt - whatever we add this is going to be encrypted and create a token for us it's like hashing a password. this encrypted value cannot be read normally. and save this encrypted value to the cookie of the browser and then we are going to use it later to authenticate the user
+
+jwt.sign() has 3 parameters to pass;
+value -
+
+secret key - unique key, token is going to created and encrypted based on this secret key. this is unique for yourself. otherwise others can hijack users cookie.
+users of the website going to have a cookie encrypted uniquely by this secret key and this key can be any letters and numbers, you have to save it in the server of your website
+
+expiresIn - can add expiration time for the cookie as like one day.. it you don't add anything is going to be expired when the user close their browser, as long as their browser is open it is going to be valid
+
+
+-------------- Complete signin page functionality -------------- 
+
+
+-------------- Add redux toolkit -------------- 
+we want to use information from sign-in respond to add for example user image. we want to use a global state that we can use in header we can use all pages. if you don't use the global state we  have to just pass the state from each component. so the package you want to use for creating global state is Redux toolkit. then we can save that information from sign-in respond in to that redux toolkit global state and use it later in our application.
+
+save information in the front end as a global state.
+
+	command : (frontend)
+	npm install @reduxjs/toolkit react-redux
+use the reduxtoolkit website quick start guide
+
+	add chrome extention :
+	Redux DevTools
+
+-------------- Add redux persist -------------- 
+we are going to use redux persist to save the information locally. so when we refresh the page we're not going to lose our information.
+check the reduxtoolkit website and search "persist" => # Use with Redux-Persist
+
+	command : 
+	npm i redux-persist
+
+
+ -------------- Add Google OAuth functionality ?????????????????????
+
+-------------- Update header component with user data -------------- 
+
