@@ -119,7 +119,29 @@ check the reduxtoolkit website and search "persist" => # Use with Redux-Persist
 	npm i redux-persist
 
 
- -------------- Add Google OAuth functionality ?????????????????????
+-------------- Add Google OAuth functionality -------------- 
+we need to sign up gor firebase google.
+
+	command: 
+	npm install firebase
 
 -------------- Update header component with user data -------------- 
 
+
+
+-------------- Complete sidebar of the dashboard -------------- 
+we have to find out which tab we are in. we use a hook called useLocation from react-router-dom.
+and then we want to get the parameters we use a method called URLSearchParams to get that.
+and then we want to create piece of state called tab so we know which tab we are in
+and we want to create a useEffect react hook , inside it we call URLSearchParams constructer in java script to get params
+
+ -------------- Complete user image upload functionality -------------- 
+
+	command:
+	npm install --save react-circular-progressbar
+	(from www.npmjs.com/package/react-circular-progressbar follow the steps)
+
+-------------- Add update user API route --------------
+
+	command :(backend)
+	npm i cookie-parser
