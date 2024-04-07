@@ -145,3 +145,12 @@ and we want to create a useEffect react hook , inside it we call URLSearchParams
 
 	command :(backend)
 	npm i cookie-parser
+
+-------------- Complete create a post page UI --------------
+	command :(frontend)
+	npm install react-quill --save
+	(check https://www.npmjs.com/package/react-quill)
+	import it with its css
+
+-------------- Add create a post API route -------------- 
+we want to create a slug for our post because for the SEO purpose it's better to have a slug for the post instead of just having the post id for the url
